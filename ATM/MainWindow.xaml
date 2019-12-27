@@ -1,0 +1,27 @@
+﻿<Window x:Class="ATM.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com" 
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ATM"
+        mc:Ignorable="d"
+        Title="startscreen" WindowState="Maximized" WindowStyle="None" MouseDown="Window_MouseDown" Icon="Images/icon.png">
+    <Grid>
+        <Image x:Name="backgroundimg" gif:ImageBehavior.AnimatedSource="Images/7.gif" gif:ImageBehavior.AnimateInDesignMode="True" Stretch="Fill"/>
+        <StackPanel VerticalAlignment="Center">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                   
+                </Grid.ColumnDefinitions>
+                <Image x:Name="backgroundimg1" gif:ImageBehavior.AnimatedSource="Images/logo5.gif" gif:ImageBehavior.AnimateInDesignMode="True" Grid.Column="0"  HorizontalAlignment="Right" VerticalAlignment="Center" Height="139"  Width="143">
+
+                </Image>
+                <TextBlock Text="Please touch to start!" Padding="5" Foreground="#FFE2CE0A" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Comic Sans MS" FontSize="24" Grid.Column="1"/>
+            </Grid>
+        </StackPanel>
+    </Grid>
+
+</Window>

@@ -1,0 +1,26 @@
+﻿<Window x:Class="ATM.TransctionConfirmation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ATM"
+        mc:Ignorable="d"
+        Title="TransctionConfirmation" Height="450" Width="800" WindowState="Maximized">
+    <Grid Background="#FFC4CF55">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <StackPanel x:Name="stkpnl_limitoptionbuttons" HorizontalAlignment="Center" Grid.Row="0"  Margin="10,0,10,0">
+            <TextBlock Text="Congratulations Transaction Completed!!" HorizontalAlignment="Center" FontFamily="Segoe Print" FontSize="22" FontWeight="Bold" Padding="3" Foreground="#FFF3F5F7"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Margin="10,0,10,0">
+            <TextBlock TextWrapping="Wrap" Text="You have just purchased:" FontFamily="Segoe Print" FontSize="20" FontWeight="Bold" Foreground="#FFF3F5F7"/>
+            <TextBlock x:Name="lblexchangeamount" TextWrapping="Wrap" Text="" FontFamily="Segoe Print" FontSize="20" FontWeight="Bold" Foreground="#FFF3F5F7"/>
+            <TextBlock TextWrapping="Wrap" Text="for:" FontFamily="Segoe Print" FontSize="20" FontWeight="Bold" Foreground="#FFF3F5F7"/>
+            <TextBlock x:Name="lblinsertedamount" TextWrapping="Wrap" Text="" FontFamily="Segoe Print" FontSize="20" FontWeight="Bold" Foreground="#FFF3F5F7"/>
+        </StackPanel>
+    </Grid>
+</Window>
